@@ -1,6 +1,7 @@
 package com.example.vaibhav.cb_asynctask;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 /**
  * Created by vaibhav on 25-06-2017.
@@ -29,6 +30,7 @@ class NSecWaitTask extends AsyncTask<Integer, Float, String> {
             }
         }
 
+        Log.d("TAG","onFinish");
 
         return "BOOM";
     }
